@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+  <center><form action="www.skolavdf.cz" style="display:grid;gap:10px;width:200px">
+    <h2>Přihlášení</h2>
+    <input placeholder="jméno">
+    <input type="password" placeholder="heslo">
+    <button id="b" style="position:fixed;padding:10px;cursor:pointer">přihlásit</button></center>
+  </form>
+  <script>
+    const m = () => {
+      b.style.left = Math.random() * (innerWidth - 80) + 'px';
+      b.style.top = Math.random() * (innerHeight - 40) + 'px';
+    };
+    b.onmouseover = b.onclick = b.ontouchstart = m;
+    m();
+  </script>
+</body>
